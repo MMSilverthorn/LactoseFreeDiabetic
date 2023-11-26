@@ -8,11 +8,11 @@ const app = express();
 app.use(express.static(initial_path));
 app.use(fileupload());
 
-app.get('/', (req, res) => {
+app.get('/', (_req, res) => {
     res.sendFile(path.join(initial_path, "home.html"));
 })
 
-app.get('/editor', (req, res) => {
+app.get('/editor', (_req, res) => {
     res.sendFile(path.join(initial_path, "editor.html"));
 })
 
@@ -26,7 +26,7 @@ app.post('/upload', (req, res) => {
     let path = 'public/uploads/' + imagename;
 
     // create upload
-    file.mv(path, (err, result) => {
+    file.mv(path, (err, _result) => {
         if(err){
             throw err;
         } else{
@@ -36,11 +36,14 @@ app.post('/upload', (req, res) => {
     })
 })
 
-app.get("/:blog", (req, res) => {
+app.get("/:blog", (_req, res) => {
     res.sendFile(path.join(initial_path, "blog.html"));
 })
 
-app.use((req, res) => {
+
+
+
+app.use((_req, res) => {
     res.json("404");
 })
 
