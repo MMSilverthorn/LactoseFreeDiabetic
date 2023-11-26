@@ -1,8 +1,37 @@
-# LactoseFreeDiabetic
-New website design
+Lactose Free Diabetic blog site
+Mary Silverthron Oct. 2023
 
-Attenpting to upgrade my skills (they are 20 years old, lol)
+To use these files you may need to read
+node_modules/vary/README.md 
 
-Code Kentucky/Louieville  Web Developement Course. I actually own the domain and want to get the site completed before I buy hosting space. It's been in my head for a while as I am lactose Intolerant and have diabeties. It makes life challanging. Especially since I have to avoid soy as well.
+After npm installed, run npm start
 
-Mary M. Silverthorn 7/25/2023
+Responsive website
+Working blog
+
+
+Firebase credentials
+
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-app.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyAVeIoaloOytnCCRTu37P_J2WjKdRh2z9E",
+    authDomain: "lfdblog-35336.firebaseapp.com",
+    projectId: "lfdblog-35336",
+    storageBucket: "lfdblog-35336.appspot.com",
+    messagingSenderId: "1007302521671",
+    appId: "1:1007302521671:web:451e2be12527c980259262"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+</script>
+
+
+  
+
